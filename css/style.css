@@ -43,6 +43,7 @@ body{
   margin-right: 20px;
   font-family: Roboto Condensed, sans-serif;
   font-size: 25px;
+  text-decoration: none;
 }
 .navbar a{
   float: left;
@@ -107,24 +108,24 @@ body{
 .main-subheading{
 
 }
+
 /*SKILLS LIST*/
 .skills-list{
-  color: rgb(200, 51, 34);
+  color: #952323;
   /*margin: 25px 0px 10px;*/
   /*z-index: 2;*/
   /*display: flex;
   flex-wrap: wrap;
   position: relative;*/
   list-style: none;
-  text-align: center;
   font-family: 'Lucida Console';
   font-weight: bold;
-  justify-content: center;
-
+  padding: 0;
+  margin: 0;
 }
 .skills-list li{
   /*margin: 0px 25px 5px 0px;*/
   display: inline-block;
-
+  padding-right: 10px;
 }
 
