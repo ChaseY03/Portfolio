@@ -95,6 +95,7 @@ body{
 }
 .section.image#About{
   background-image: url("/img/aboutBackground.jpg");
+  background-color: #4d4d4d;
   background-position: 50% 10000%;
   background-size: cover,contain;
   background-repeat: no-repeat;
