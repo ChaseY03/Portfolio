@@ -2,6 +2,16 @@
 .d-flex {
   display: flex!important;
 }
+.container{
+  width:100%;
+  height: 90%;
+  min-height: 566px;
+  position: absolute;
+  top: 5%;
+  margin: 0px auto;
+  z-index: 1;
+}
+/* NAVIGATION */
 .nav-bar{
   background: #181818;
   width: 100px;
@@ -104,6 +114,24 @@ a:hover svg{
   a svg {
     opacity: 1 !important;
   }
+
+  .tags,
+  .home-page h1:before,
+  .home-page h1:after {
+    display: none;
+  }
+
+  .home-page .home-text {
+    position: initial;
+    width: 100%;
+    transform: none;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .container{
+    margin: 0 auto;
+  }
+
 }
 
 .hamburger-icon,
@@ -112,4 +140,30 @@ a:hover svg{
   top: 15px;
   right: 15px;
   display: block;
+}
+
+/* HOME */
+.home-text{
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  width: 100%;
+  max-height: 90%;
+}
+.home-text h1 {
+  color: #fff;
+  font-size: 56px;
+  line-height: 53px;
+  margin-left: 100px;
+  font-weight: 400;
+  text-align: center;
+}
+.home-text  h2 {
+  color: #8d8d8d;
+  margin-top: 20px;
+  margin-left: 100px;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-align: center;
 }

@@ -1,11 +1,21 @@
-//import { Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import Navbar from "./Navbar"
 
 
 const Layout = () => {
     return (
-        <div className={''}>
-            <Navbar/>
+        <div className="App">
+            <Navbar />
+            <div className="page">
+                <span className="tags top-tags">&lt;body&gt;</span>
+
+                <Outlet />
+                <span className="tags bottom-tags">
+          &lt;/body&gt;
+                    <br />
+          <span className="bottom-tag-html">&lt;/html&gt;</span>
+        </span>
+            </div>
         </div>
     )
 }

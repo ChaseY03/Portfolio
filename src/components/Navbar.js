@@ -1,7 +1,4 @@
 import {Link, NavLink} from 'react-router-dom'
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import Container from "react-bootstrap/Container";
 import '../App.css'
 import CLogo from '../assets/chaselogo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
