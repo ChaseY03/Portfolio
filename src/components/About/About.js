@@ -3,7 +3,7 @@ import '../../App.css'
 const About = () => {
     return(
         <div className={"container"}>
-            <div className={"home-text"}>
+            <div className={"container-text"}>
                 <h1>About</h1>
             </div>
         </div>

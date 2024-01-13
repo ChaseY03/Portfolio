@@ -2,7 +2,7 @@ import '../../App.css'
 
 const Home = () => {
   return(
-  <div className={"container"}>
+  <div className={"home-container"}>
     <div className={"home-text"}>
       <h1>Hi, I'm Chase.
         <br/>Developer
