@@ -6,27 +6,40 @@ import {
     faLinkedin,
     faGithub,
 } from '@fortawesome/free-brands-svg-icons'
+import {
+    faBars,
+    faClose,
+} from '@fortawesome/free-solid-svg-icons'
+import {useState} from "react";
 const Navigation = () => {
+    const [showNav, setShowNav] = useState(false)
+
     return (
-        <div className={"nav-bar d-flex"}>
-            <Link to={"/"} className={"logo"}>
+        <div className={"nav-bar"}>
+            <Link to={"/"} className={"logo"} onClick={() => setShowNav(false)}>
                 <img src={CLogo} alt="brand logo"/>
             </Link>
-                <nav>
-                       <NavLink exact="true" to="/" >Home</NavLink>
-                       <NavLink to="/about" >About</NavLink>
-                       <NavLink to="/skills" >Skills</NavLink>
-                       <NavLink to="/projects" >Projects</NavLink>
-                       <NavLink to="/contact" >Contact</NavLink>
-                </nav>
+            <nav className={showNav ? 'mobile-show' : ''}>
+                <NavLink exact="true" to="/" onClick={() => setShowNav(false)}>Home</NavLink>
+                <NavLink to="/about" onClick={() => setShowNav(false)}>About</NavLink>
+                <NavLink to="/skills" onClick={() => setShowNav(false)}>Skills</NavLink>
+                <NavLink to="/projects" onClick={() => setShowNav(false)}>Projects</NavLink>
+                <NavLink to="/contact" onClick={() => setShowNav(false)}>Contact</NavLink>
+                <FontAwesomeIcon
+                    onClick={() => setShowNav(false)}
+                    icon={faClose}
+                    color="#ffd700"
+                    size="3x"
+                    className='close-icon' />
+            </nav>
             <ul>
                 <li>
                     <a href="https://www.linkedin.com/in/chase-yang/"
                        target="_blank" rel="noreferrer">
                         <FontAwesomeIcon
-                        icon={faLinkedin}
-                        color="#4d4d4e"
-                        className="anchor-icon"/></a>
+                            icon={faLinkedin}
+                            color="#4d4d4e"
+                            className="anchor-icon"/></a>
                 </li>
                 <li>
                     <a
@@ -42,7 +55,12 @@ const Navigation = () => {
                     </a>
                 </li>
             </ul>
-
+            <FontAwesomeIcon
+                onClick={() => setShowNav(true)}
+                icon={faBars}
+                color="#c10005"
+                size="3x"
+                className='hamburger-icon' />
         </div>
     )
 }

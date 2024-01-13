@@ -113,79 +113,12 @@ a.active{
   color: #707070;
 }
 a:hover svg{
-  color:red;
+  color:#c10005;
 }
 .hamburger-icon, .close-icon {
   display: none;
 }
-@media screen and (max-width: 1200px) {
-  .nav-bar {
-    background: transparent;
-    position: initial;
-    height: auto;
-    min-height: auto;
-  }
-  .nav-bar ul, nav {
-    display: none;
-  }
 
-  nav {
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: #181818;
-    height: 100%;
-    margin: 0;
-    z-index: 2;
-    position: fixed;}
-
-  nav .mobile-show {
-   display: block;
- }
-
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  a:after {
-    opacity: 1;
-    position: initial;
-    width: auto;
-    margin-left: 10PX;
-  }
-
-  a svg {
-    opacity: 1 !important;
-  }
-
-  .tags,
-  .home-page h1:before,
-  .home-page h1:after {
-    display: none;
-  }
-
-  .home-page .home-text {
-    position: initial;
-    width: 100%;
-    transform: none;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  .container{
-    margin: 0 auto;
-  }
-
-}
-
-.hamburger-icon,
-.close-icon {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  display: block;
-}
 
 /* HOME */
 .home-text{
@@ -211,4 +144,85 @@ a:hover svg{
   font-size: 11px;
   letter-spacing: 3px;
   text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 960px) {
+  .nav-bar {
+    background: #181818;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    min-height: 0;
+  }
+  .nav-bar ul, nav {
+    display: none;
+  }
+  .nav-bar .logo {
+    float: left;
+    margin-left:10px;
+    margin-right: 20px;
+  }
+
+  nav {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #181818;
+    height: 100%;
+    margin: 0;
+    z-index: 2;
+    position: fixed;}
+
+  nav .mobile-show {
+    display: block;
+    z-index: 1;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a:after {
+    opacity: 1;
+    position: initial;
+    width: auto;
+    margin-left: 10PX;
+  }
+  a svg {
+    opacity: 1 !important;
+  }
+
+  .home-container h1:before,
+  .home-container h1:after {
+    display: none;
+  }
+
+  .home-container .home-text {
+    position: absolute;
+    width: 80%;
+    transform: none;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .container{
+    margin: 0 auto;
+  }
+
+  .hamburger-icon,
+  .close-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: block;
+    z-index: 1;
+  }
 }
