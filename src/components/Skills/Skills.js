@@ -1,7 +1,6 @@
 import '../../App.css'
 //import './Skillstyle.css'
 //import './SkillCard.scss'
-import Card from 'react-bootstrap/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faHtml5,

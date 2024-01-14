@@ -1,4 +1,5 @@
 import '../../App.css'
+import ninjacharacter from '../../assets/ninja.png'
 
 const Home = () => {
   return(
@@ -8,6 +9,10 @@ const Home = () => {
         <br/>Developer
       </h1>
       <h2>Software Developer | Frontend Developer</h2>
+    </div>
+
+    <div >
+      <img src={ninjacharacter} alt="ninja 3D character" className={"home-character"}/>
     </div>
   </div>
     )
