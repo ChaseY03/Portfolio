@@ -20,15 +20,15 @@ const Navigation = () => {
                 <img src={CLogo} alt="brand logo"/>
             </Link>
             <nav className={showNav ? 'mobile-show' : ''}>
-                <NavLink exact="true" to="/" onClick={() => setShowNav(false)}>Home</NavLink>
-                <NavLink to="/about" onClick={() => setShowNav(false)}>About</NavLink>
-                <NavLink to="/skills" onClick={() => setShowNav(false)}>Skills</NavLink>
-                <NavLink to="/projects" onClick={() => setShowNav(false)}>Projects</NavLink>
-                <NavLink to="/contact" onClick={() => setShowNav(false)}>Contact</NavLink>
+                <NavLink exact="true" to="/" activeclassname="active" onClick={() => setShowNav(false)}>Home</NavLink>
+                <NavLink to="/about" activeclassname="active" onClick={() => setShowNav(false)}>About</NavLink>
+                <NavLink to="/skills" activeclassname="active" onClick={() => setShowNav(false)}>Skills</NavLink>
+                <NavLink to="/projects" activeclassname="active" onClick={() => setShowNav(false)}>Projects</NavLink>
+                <NavLink to="/contact" activeclassname="active" onClick={() => setShowNav(false)}>Contact</NavLink>
                 <FontAwesomeIcon
                     onClick={() => setShowNav(false)}
                     icon={faClose}
-                    color="#ffd700"
+                    color="#c10005"
                     size="3x"
                     className='close-icon' />
             </nav>
@@ -66,25 +66,3 @@ const Navigation = () => {
 }
 
 export default Navigation
-
-/*
- <Navbar fixed="left" expand="md">
-            <Container>
-            <Navbar.Brand href="/" className={"d-flex"}>
-                <img src={CLogo} alt="brand logo" className={"img-fluid logo"}/>
-            </Navbar.Brand>
-            <Nav.Item>
-                <Nav.Link as={Link} to="/about" >To About</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link as={Link} to="/skills" >To Skills</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link as={Link} to="/projects" >To Projects</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link as={Link} to="/contact" >To Contact</Nav.Link>
-            </Nav.Item>
-            </Container>
-        </Navbar>
-*/

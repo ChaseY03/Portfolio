@@ -7,7 +7,7 @@ const Projects = () => {
                 <h1>Projects</h1>
                 <div>
                     <h3>CareNexa</h3>
-                    <p>A data management system that was deployed on Google Cloud Platform
+                    <p className={"container-text-p"}>A data management system that was deployed on Google Cloud Platform
                         connecting to a Google CloudMySQL database</p>
                 </div>
             </div>

@@ -2,6 +2,17 @@
 .d-flex {
   display: flex!important;
 }
+.background-gradient {
+  /*background: linear-gradient(19deg, #3D4849 0%, #36454f 100%);*/
+  background:linear-gradient(19deg, #212121 0%, #4d4d4e 100%);
+  width: 100%;
+  height: 100vh;
+}
+#tsparticles {
+  height: 100vh;
+  width: 100vw;
+}
+
 /* CONTAINERS */
 .home-container{
   width:100%;
@@ -22,39 +33,6 @@
   z-index: 1;
 }
 
-.container-text{
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  width: 100%;
-  max-height: 90%;
-}
-.container-text h1{
-  color: #fff;
-  font-size: 56px;
-  line-height: 53px;
-  font-weight: 400;
-}
-.container-text h2{
-  color: #8d8d8d;
-  margin-top: 20px;
-  font-weight: 400;
-  font-size: 11px;
-  letter-spacing: 3px;
-}
-.container-text h3{
-  color: #fff;
-  margin-top: 20px;
-  font-weight: 400;
-  font-size: 13px;
-}
-.container-text p{
-  margin-top: 20px;
-  line-height: 18px;
-  color: #fff;
-  font-weight: 300;
-  font-size: 12px;
-}
 
 /* NAVIGATION */
 .nav-bar{
@@ -92,6 +70,7 @@ nav a{
   text-decoration: none;
 }
 ul {
+  padding:0!important;
   position: absolute;
   bottom: 20px;
   width: 100%;
@@ -105,15 +84,18 @@ ul li a{
   padding: 7px 0;
   display: block;
   font-size: 30px;
-  line-height: 15px;
+ine-height: 15px;
   color: #4d4d4e;
 
 }
 a.active{
   color: #707070;
 }
+a:hover {
+  color:#ff4545;
+}
 a:hover svg{
-  color:#c10005;
+  color:#ff4545;
 }
 .hamburger-icon, .close-icon {
   display: none;
@@ -122,32 +104,94 @@ a:hover svg{
 
 /* HOME */
 .home-text{
+  /*
   position: absolute;
   top: 20%;
   transform: translateY(-50%);
   width: 100%;
+  max-height: 90%;*/
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40%;
   max-height: 90%;
 }
 .home-text h1 {
-  color: #fff;
+  color: #ff4545;
   font-size: 56px;
   line-height: 53px;
-  margin-left: 100px;
-  font-weight: 400;
-  text-align: center;
+  /*margin-left: 100px;
+  text-align: center;*/
+  font-weight: 600;
+  margin: 0;
 }
 .home-text  h2 {
   color: #8d8d8d;
   margin-top: 20px;
-  margin-left: 100px;
-  font-weight: 400;
-  font-size: 11px;
+  /*margin-left: 100px;
+  text-align: center;*/
+  font-weight: 500;
+  font-size: 12px;
   letter-spacing: 3px;
+
+}
+/* OTHER PAGES TEXT STYLES*/
+
+.container-text{
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 80%;
+  max-height: 90%;
+}
+.container-text h1{
+  color: #fff;
+  font-size: 56px;
+  line-height: 53px;
+  font-weight: 400;
+}
+.container-text h2{
+  color: #8d8d8d;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+.container-text h3{
+  color: #fff;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.container-text-p{
+  /*margin-top: 20px;*/
+  line-height: 18px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 15px;
+}
+.skills-info{
+  margin: 20px 0px 20px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  list-style: none;
+}
+.skills-info-p {
+  margin: 0px 20px 0px 10px!important;
+  display: inline-block;
+  color: #ff4545;
+}
+.skills-info svg{
+  margin-left: 10px!important;
+  margin-top: 3px!important;
+  justify-content: center;
   text-align: center;
 }
-
-
-
 
 @media screen and (max-width: 960px) {
   .nav-bar {
@@ -157,18 +201,11 @@ a:hover svg{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 3;
     min-height: 0;
   }
-  .nav-bar ul, nav {
+  ul, nav {
     display: none;
   }
-  .nav-bar .logo {
-    float: left;
-    margin-left:10px;
-    margin-right: 20px;
-  }
-
   nav {
     width: 100%;
     top: 0;
@@ -177,34 +214,36 @@ a:hover svg{
     height: 100%;
     margin: 0;
     z-index: 2;
-    position: fixed;}
-
-  nav .mobile-show {
-    display: block;
-    z-index: 1;
+    position: fixed;
   }
-
+  nav.mobile-show {
+    display: block;
+  }
   a {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   a:after {
     opacity: 1;
     position: initial;
     width: auto;
-    margin-left: 10PX;
+    margin-left: 10px;
   }
   a svg {
     opacity: 1 !important;
   }
-
+  .hamburger-icon,
+  .close-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: block;
+  }
   .home-container h1:before,
   .home-container h1:after {
     display: none;
   }
-
   .home-container .home-text {
     position: absolute;
     width: 80%;
@@ -216,13 +255,12 @@ a:hover svg{
   .container{
     margin: 0 auto;
   }
-
-  .hamburger-icon,
-  .close-icon {
+  .container-text{
     position: absolute;
-    top: 15px;
-    right: 15px;
-    display: block;
-    z-index: 1;
+    width: 80%;
+    transform: none;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
   }
 }
