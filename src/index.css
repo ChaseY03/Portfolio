@@ -10,7 +10,8 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   background: #212121;
   /*color: #FF4545;*/
-  overflow: hidden;
+  /*overflow: hidden;
+    overflow: visible;*/
   display: block;
 }
 

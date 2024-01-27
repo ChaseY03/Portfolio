@@ -5,11 +5,13 @@ import '../App.css'
 
 
 const Layout = () => {
-    return (
+    return (<>
             <div className={"background-gradient"}>
-                <Navbar />
-                <Outlet />
+            <Navbar />
+            <Outlet />
             </div>
+        </>
+
     )
 }
 

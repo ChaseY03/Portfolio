@@ -1,4 +1,6 @@
-
+body{
+  overflow: hidden;
+}
 .d-flex {
   display: flex!important;
 }
@@ -16,23 +18,20 @@
 /* CONTAINERS */
 .home-container{
   width:100%;
-  height: 90%;
+  height: 100%;
   min-height: 566px;
   position: absolute;
   top: 5%;
   margin: 0px auto;
-  z-index: 1;
 }
 .container{
   width:100%;
-  height: 90%;
+  height: 100%;
   min-height: 566px;
   position: absolute;
   top: 5%;
   margin: 0px auto;
-  z-index: 1;
 }
-
 
 /* NAVIGATION */
 .nav-bar{
@@ -274,6 +273,6 @@ a:hover svg{
   .home-character{
     margin-left: 0;
     width: 100%;
-    height: 100%;
+    height: 90%;
   }
 }

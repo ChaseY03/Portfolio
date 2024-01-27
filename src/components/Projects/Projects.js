@@ -18,12 +18,36 @@ const Projects = () => {
                 <h1>Projects</h1>
                 <div>
                     <h3>CareNexa - University project</h3>
-                    <p className={"container-text-p"}>A react app data management system that was deployed on Google Cloud Platform
-                        connecting to a Google CloudMySQL database</p>
+                    <p className={"container-text-p"}>A react app data management system, deployed on Google Cloud Platform and
+                        connecting to a Google Cloud MySQL database</p>
+                    <h3>Platformer game - University project</h3>
+                    <p className={"container-text-p"}>Cartoon styled multi-level platformer game, created in Java</p>
                     <h3>Fasthosts - College project</h3>
                     <p className={"container-text-p"}>Recreated Fasthosts website using ASP.NET and MSSQL</p>
                     <h3>Golden Rhino - College project</h3>
                     <p className={"container-text-p"}>A mobile application that displayed news for games, created using Xamarin</p>
+
+
+                    <h3>CareNexa - University project</h3>
+                    <p className={"container-text-p"}>A react app data management system, deployed on Google Cloud Platform and
+                        connecting to a Google Cloud MySQL database</p>
+                    <h3>Platformer game - University project</h3>
+                    <p className={"container-text-p"}>Cartoon styled multi-level platformer game, created in Java</p>
+                    <h3>Fasthosts - College project</h3>
+                    <p className={"container-text-p"}>Recreated Fasthosts website using ASP.NET and MSSQL</p>
+                    <h3>Golden Rhino - College project</h3>
+                    <p className={"container-text-p"}>A mobile application that displayed news for games, created using Xamarin</p>
+
+                    <h3>CareNexa - University project</h3>
+                    <p className={"container-text-p"}>A react app data management system, deployed on Google Cloud Platform and
+                        connecting to a Google Cloud MySQL database</p>
+                    <h3>Platformer game - University project</h3>
+                    <p className={"container-text-p"}>Cartoon styled multi-level platformer game, created in Java</p>
+                    <h3>Fasthosts - College project</h3>
+                    <p className={"container-text-p"}>Recreated Fasthosts website using ASP.NET and MSSQL</p>
+                    <h3>Golden Rhino - College project</h3>
+                    <p className={"container-text-p"}>A mobile application that displayed news for games, created using Xamarin</p>
+
                 </div>
             </div>
 
