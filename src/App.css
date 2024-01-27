@@ -228,6 +228,86 @@ a:hover svg{
 @media only screen and (min-width: 80em) {...}
 
 @media screen and (max-width: 1200px) {*/
+
+@media screen and (min-width: 46em) and (max-width: 64em){
+  .home-character{
+    margin-left: 8em;
+    width: auto;
+    height: 90%;
+    pointer-events: none;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+  .home-container .home-text {
+    position: absolute;
+    width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    left: 18vw;
+    top: 40vh;
+    transform: none;
+  }
+  .home-text h1{
+    font-size: 45px;
+  }
+  .container{
+    margin: 0 auto;
+    top: 0;
+  }
+  .container-text{
+    position: absolute;
+    width: 80%;
+    transform: none;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    left: 15vw;
+  }
+}
+@media screen and (max-width: 46em) {
+  .home-character{
+    margin-left: 0;
+    width: auto;
+    height: 80%;
+    pointer-events: none;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+  .home-container .home-text {
+    position: absolute;
+    width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    top: 40vh;
+    transform: none;
+  }
+  .home-text h1{
+    font-size: 45px;
+  }
+  .container{
+    margin: 0 auto;
+    top: 0;
+  }
+  .container-text{
+    position: absolute;
+    width: 80%;
+    transform: none;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    left: 15vw;
+  }
+}
 @media screen and (max-width: 40em){
   .nav-bar {
     background: #181818;
@@ -313,83 +393,5 @@ a:hover svg{
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-  }
-}
-@media screen and (max-width: 46em) {
-  .home-character{
-    margin-left: 0;
-    width: auto;
-    height: 90%;
-    pointer-events: none;
-    user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-  }
-  .home-container .home-text {
-    position: absolute;
-    width: 80%;
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: center;
-    left: 18vw;
-    top: 40vh;
-    transform: none;
-  }
-  .home-text h1{
-    font-size: 45px;
-  }
-  .container{
-    margin: 0 auto;
-    top: 0;
-  }
-  .container-text{
-    position: absolute;
-    width: 80%;
-    transform: none;
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: left;
-  }
-}
-@media screen and (min-width: 46em) and (max-width: 64em){
-  .home-character{
-    margin-left: 8em;
-    width: auto;
-    height: 90%;
-    pointer-events: none;
-    user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-  }
-  .home-container .home-text {
-    position: absolute;
-    width: 80%;
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: center;
-    left: 18vw;
-    top: 40vh;
-    transform: none;
-  }
-  .home-text h1{
-    font-size: 45px;
-  }
-  .container{
-    margin: 0 auto;
-    top: 0;
-  }
-  .container-text{
-    position: absolute;
-    width: 80%;
-    transform: none;
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: left;
   }
 }
