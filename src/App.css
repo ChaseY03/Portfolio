@@ -228,7 +228,7 @@ a:hover svg{
 @media only screen and (min-width: 80em) {...}
 
 @media screen and (max-width: 1200px) {*/
-@media only screen and (max-width: 40em){
+@media screen and (max-width: 40em){
   .nav-bar {
     background: #181818;
     width: 100%;
@@ -315,7 +315,7 @@ a:hover svg{
     -ms-user-select: none;
   }
 }
-@media only screen and (max-width: 45em) {
+@media screen and (max-width: 46em) {
   .home-character{
     margin-left: 0;
     width: auto;
@@ -331,10 +331,12 @@ a:hover svg{
   .home-container .home-text {
     position: absolute;
     width: 80%;
-    transform: none;
     padding: 10px;
     box-sizing: border-box;
-    text-align: left;
+    text-align: center;
+    left: 18vw;
+    top: 40vh;
+    transform: none;
   }
   .home-text h1{
     font-size: 45px;
@@ -352,7 +354,7 @@ a:hover svg{
     text-align: left;
   }
 }
-@media only screen and (min-width: 46em) and (max-width: 64em){
+@media screen and (min-width: 46em) and (max-width: 64em){
   .home-character{
     margin-left: 8em;
     width: auto;

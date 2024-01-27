@@ -22,11 +22,11 @@ const Navigation = () => {
                 <img src={CLogo} alt="brand logo"/>
             </Link>
             <nav className={showNav ? 'mobile-show' : ''}>
-                <NavLink exact="true" to="/" activeclassname="active" onClick={closeNav}>Home</NavLink>
-                <NavLink to="/about" activeclassname="active" onClick={closeNav}>About</NavLink>
-                <NavLink to="/skills" activeclassname="active" onClick={closeNav}>Skills</NavLink>
-                <NavLink to="/projects" activeclassname="active"onClick={closeNav}>Projects</NavLink>
-                <NavLink to="/contact" activeclassname="active" onClick={closeNav}>Contact</NavLink>
+                <NavLink exact="true" to="/" activeclassname="active" onClick={() => setShowNav(false)}>Home</NavLink>
+                <NavLink to="/about" activeclassname="active" onClick={() => setShowNav(false)}>About</NavLink>
+                <NavLink to="/skills" activeclassname="active" onClick={() => setShowNav(false)}>Skills</NavLink>
+                <NavLink to="/projects" activeclassname="active"onClick={() => setShowNav(false)}>Projects</NavLink>
+                <NavLink to="/contact" activeclassname="active" onClick={() => setShowNav(false)}>Contact</NavLink>
                 {showNav && (<>
                     <a onClick={closeNav} href="https://www.linkedin.com/in/chase-yang/" target="_blank" rel="noreferrer">
                         <FontAwesomeIcon
@@ -40,7 +40,7 @@ const Navigation = () => {
                             className="anchor-icon"/>
                     </a></>)}
                 <FontAwesomeIcon
-                    onClick={closeNav}
+                    onClick={() => setShowNav(false)}
                     icon={faClose}
                     color="#c10005"
                     size="3x"
