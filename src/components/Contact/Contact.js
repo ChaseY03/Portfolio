@@ -5,7 +5,7 @@ const Contact = () => {
         <div className={"container"}>
             <div className={"container-text"}>
                 <h1>Contact</h1>
-                <h2>Currently you can contact me through LinkedIn only</h2>
+                <p className={"container-text-p"}>Currently you can contact me through LinkedIn only</p>
             </div>
         </div>
     )

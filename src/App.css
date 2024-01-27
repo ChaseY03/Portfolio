@@ -185,6 +185,13 @@ a:hover svg{
   font-weight: 300;
   font-size: 15px;
 }
+.container-text-a{
+  line-height: 18px;
+  color: #ff4545;
+  font-weight: 300;
+  font-size: 15px;
+  display: block;
+}
 .skills-info{
   margin: 20px 0px 20px;
   color: #fff;
@@ -285,6 +292,7 @@ a:hover svg{
   }
   .container{
     margin: 0 auto;
+    top: 0;
   }
   .container-text{
     position: absolute;
@@ -333,6 +341,7 @@ a:hover svg{
   }
   .container{
     margin: 0 auto;
+    top: 0;
   }
   .container-text{
     position: absolute;
@@ -371,6 +380,7 @@ a:hover svg{
   }
   .container{
     margin: 0 auto;
+    top: 0;
   }
   .container-text{
     position: absolute;

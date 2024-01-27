@@ -25,12 +25,23 @@ const Navigation = () => {
                 <NavLink to="/skills" activeclassname="active" onClick={() => setShowNav(false)}>Skills</NavLink>
                 <NavLink to="/projects" activeclassname="active" onClick={() => setShowNav(false)}>Projects</NavLink>
                 <NavLink to="/contact" activeclassname="active" onClick={() => setShowNav(false)}>Contact</NavLink>
+                <a onClick={() => setShowNav(false)} href="https://www.linkedin.com/in/chase-yang/" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon
+                        icon={faLinkedin}
+                        color="#4d4d4e"
+                        className="anchor-icon"/></a>
                 <FontAwesomeIcon
                     onClick={() => setShowNav(false)}
                     icon={faClose}
                     color="#c10005"
                     size="3x"
                     className='close-icon' />
+                <a onClick={() => setShowNav(false)} href="https://github.com/ChaseY03" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon
+                        icon={faGithub}
+                        color="#4d4d4e"
+                        className="anchor-icon"/>
+                </a>
             </nav>
             <ul>
                 <li>
