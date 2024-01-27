@@ -13,35 +13,39 @@ import {
 import {useState} from "react";
 const Navigation = () => {
     const [showNav, setShowNav] = useState(false)
-
+    const closeNav = () => {
+        setShowNav(!showNav);
+    };
     return (
         <div className={"nav-bar"}>
             <Link to={"/"} className={"logo"} onClick={() => setShowNav(false)}>
                 <img src={CLogo} alt="brand logo"/>
             </Link>
             <nav className={showNav ? 'mobile-show' : ''}>
-                <NavLink exact="true" to="/" activeclassname="active" onClick={() => setShowNav(false)}>Home</NavLink>
-                <NavLink to="/about" activeclassname="active" onClick={() => setShowNav(false)}>About</NavLink>
-                <NavLink to="/skills" activeclassname="active" onClick={() => setShowNav(false)}>Skills</NavLink>
-                <NavLink to="/projects" activeclassname="active" onClick={() => setShowNav(false)}>Projects</NavLink>
-                <NavLink to="/contact" activeclassname="active" onClick={() => setShowNav(false)}>Contact</NavLink>
-                <a onClick={() => setShowNav(false)} href="https://www.linkedin.com/in/chase-yang/" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon
-                        icon={faLinkedin}
-                        color="#4d4d4e"
-                        className="anchor-icon"/></a>
+                <NavLink exact="true" to="/" activeclassname="active" onClick={closeNav}>Home</NavLink>
+                <NavLink to="/about" activeclassname="active" onClick={closeNav}>About</NavLink>
+                <NavLink to="/skills" activeclassname="active" onClick={closeNav}>Skills</NavLink>
+                <NavLink to="/projects" activeclassname="active"onClick={closeNav}>Projects</NavLink>
+                <NavLink to="/contact" activeclassname="active" onClick={closeNav}>Contact</NavLink>
+                {showNav && (<>
+                    <a onClick={closeNav} href="https://www.linkedin.com/in/chase-yang/" target="_blank" rel="noreferrer">
+                        <FontAwesomeIcon
+                            icon={faLinkedin}
+                            color="#4d4d4e"
+                            className="anchor-icon"/></a>
+                    <a onClick={closeNav} href="https://github.com/ChaseY03" target="_blank" rel="noreferrer">
+                        <FontAwesomeIcon
+                            icon={faGithub}
+                            color="#4d4d4e"
+                            className="anchor-icon"/>
+                    </a></>)}
                 <FontAwesomeIcon
-                    onClick={() => setShowNav(false)}
+                    onClick={closeNav}
                     icon={faClose}
                     color="#c10005"
                     size="3x"
                     className='close-icon' />
-                <a onClick={() => setShowNav(false)} href="https://github.com/ChaseY03" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon
-                        icon={faGithub}
-                        color="#4d4d4e"
-                        className="anchor-icon"/>
-                </a>
+
             </nav>
             <ul>
                 <li>
