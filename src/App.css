@@ -15,6 +15,7 @@ body{
   width: 100vw;
 }
 
+
 /* CONTAINERS */
 .home-container{
   width:100%;
@@ -23,6 +24,7 @@ body{
   position: absolute;
   top: 5%;
   margin: 0px auto;
+  overflow: hidden;
 }
 .container{
   width:100%;
@@ -31,6 +33,7 @@ body{
   position: absolute;
   top: 5%;
   margin: 0px auto;
+  overflow: hidden;
 }
 
 /* NAVIGATION */
@@ -83,7 +86,7 @@ ul li a{
   padding: 7px 0;
   display: block;
   font-size: 30px;
-ine-height: 15px;
+  ine-height: 15px;
   color: #4d4d4e;
 
 }
@@ -136,9 +139,15 @@ a:hover svg{
 }
 .home-character{
   margin-left: 50vw;
-  width: 45%;
+  width: 40%;
   height: 100vh;
-
+  pointer-events: none;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 /* OTHER PAGES TEXT STYLES*/
 
@@ -154,6 +163,7 @@ a:hover svg{
   font-size: 56px;
   line-height: 53px;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 .container-text h2{
   color: #8d8d8d;
@@ -197,7 +207,21 @@ a:hover svg{
   text-align: center;
 }
 
-@media screen and (max-width: 1200px) {
+/*
+/* Small devices such as large phones (640px and up)
+@media only screen and (min-width: 40em) {...}
+
+/* Medium devices such as tablets (768px and up)
+@media only screen and (min-width: 48em) {...}
+
+/* Large devices such as laptops (1024px and up)
+@media only screen and (min-width: 64em) {...}
+
+/* Largest devices such as desktops (1280px and up)
+@media only screen and (min-width: 80em) {...}
+
+@media screen and (max-width: 1200px) {*/
+@media only screen and (max-width: 40em){
   .nav-bar {
     background: #181818;
     width: 100%;
@@ -272,7 +296,88 @@ a:hover svg{
   }
   .home-character{
     margin-left: 0;
-    width: 100%;
+    width: auto;
     height: 90%;
+    pointer-events: none;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+}
+@media only screen and (max-width: 45em) {
+  .home-character{
+    margin-left: 0;
+    width: auto;
+    height: 90%;
+    pointer-events: none;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+  .home-container .home-text {
+    position: absolute;
+    width: 80%;
+    transform: none;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .home-text h1{
+    font-size: 45px;
+  }
+  .container{
+    margin: 0 auto;
+  }
+  .container-text{
+    position: absolute;
+    width: 80%;
+    transform: none;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 46em) and (max-width: 64em){
+  .home-character{
+    margin-left: 8em;
+    width: auto;
+    height: 90%;
+    pointer-events: none;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+  .home-container .home-text {
+    position: absolute;
+    width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    left: 18vw;
+    top: 40vh;
+    transform: none;
+  }
+  .home-text h1{
+    font-size: 45px;
+  }
+  .container{
+    margin: 0 auto;
+  }
+  .container-text{
+    position: absolute;
+    width: 80%;
+    transform: none;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
   }
 }
